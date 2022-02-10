@@ -1,0 +1,30 @@
+.acontent
+{
+text-align:justify;
+width: 960px;
+margin-left: 250px;
+
+}
+.acontent1
+{
+text-align:center;
+width: 1300px;
+margin-left: 10px;
+
+}
+.me{
+    width: 290px;
+    height:auto;
+    margin-left:120px;
+}
+.column1 {
+    float: left;
+    width: 12%;
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

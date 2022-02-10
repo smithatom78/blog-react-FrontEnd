@@ -1,0 +1,51 @@
+.heading
+{
+    text-align:center;
+width: 100%;
+
+background-image: url('./art.png');
+}
+.content
+{
+text-align:justify;
+height:260px;
+}
+.content1
+{
+text-align:center;
+width: 1300px;
+margin-left: 10px;
+border-style: dotted;
+padding:20px;
+}
+.content2
+{
+text-align:center;
+width: 1300px;
+margin-left: 10px;
+
+padding:20px;
+}
+.article{
+    padding-right: 50px;
+    font-size: x-large;
+    padding:25px;
+}
+.articles1{
+    padding-right: 50px;
+    font-size: x-large;
+}
+
+.column {
+    float: left;
+    width: 46%;
+border-style: groove;
+padding:10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
