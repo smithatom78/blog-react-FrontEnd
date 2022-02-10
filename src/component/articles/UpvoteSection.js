@@ -5,7 +5,7 @@ export const UpvoteSection = (props) => {
     const { name, upvotes, setarticleData } = props;
 
     async function fetchUpVotes() {
-        const response = await fetch(`http://localhost:5000/api/article/${name}/upvotes`, {
+        const response = await fetch(`https://smith-blog.herokuapp.com/api/article/${name}/upvotes`, {
             method: 'post'
         });
         const body = await response.json();

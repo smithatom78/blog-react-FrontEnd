@@ -44,7 +44,7 @@ export const SignUp = () => {
             const email = formValues.email;
             const password = formValues.password;
                
-            const response = await fetch(`http://localhost:5000/api/register`, {
+            const response = await fetch(`https://smith-blog.herokuapp.com/api/register`, {
                 method: 'post',
                 body: JSON.stringify({ user,email,password}),
                 headers: {

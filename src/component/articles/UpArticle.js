@@ -18,7 +18,7 @@ export const UpArticle = () => {
     //backend connection for api fetch
     async function fetchAPI()
     { 
-            const response = await fetch(`http://localhost:5000/api/article/${name}`);
+            const response = await fetch(`https://smith-blog.herokuapp.com/api/article/${name}`);
             const body =  await response.json();
             console.log(body);
            setarticleData(body);
@@ -30,7 +30,7 @@ export const UpArticle = () => {
                         const title = articleData.title;
                 const description = articleData.description;
           
-        const response = await fetch(`http://localhost:5000/api/uparticle/${name}/`, {
+        const response = await fetch(`https://smith-blog.herokuapp.com/api/uparticle/${name}/`, {
             method: 'post',
          //   body: JSON.stringify({ name,title,description,user,upvotes,username, text }),
          body: JSON.stringify({ name,title,description}),

@@ -15,7 +15,7 @@ function handleChange(event)
             const username = commentValues.username;
             const text = commentValues.comment;
     
-            const response = await fetch(`http://localhost:5000/api/article/${name}/comments`, {
+            const response = await fetch(`https://smith-blog.herokuapp.com/api/article/${name}/comments`, {
                 method: 'post',
                 body: JSON.stringify({ username, text }),
                 headers: {

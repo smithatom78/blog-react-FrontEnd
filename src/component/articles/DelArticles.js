@@ -7,7 +7,7 @@ export const DelArticles = () => {
   }, [name]);
 
   async function DelArticles() {
-      const response = await fetch(`http://localhost:5000/api/delarticle/${name}`, {
+      const response = await fetch(`https://smith-blog.herokuapp.com/api/delarticle/${name}`, {
           method: 'delete'
       });
      //const body = await response.json();

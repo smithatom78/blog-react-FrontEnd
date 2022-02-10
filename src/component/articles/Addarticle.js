@@ -23,7 +23,7 @@ function handleChange(event)
             const username = articleValues.username;
             const text = articleValues.comment;
     
-            const response = await fetch(`http://localhost:5000/api/addart`, {
+            const response = await fetch(`https://smith-blog.herokuapp.com/api/addart`, {
                 method: 'post',
                 body: JSON.stringify({ name,title,description,user,upvotes,username, text }),
                 headers: {
